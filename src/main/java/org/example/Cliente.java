@@ -1,48 +1,48 @@
 package org.example;
 
 public class Cliente {
-    private String DNI;
-    private String NombreCompleto;
-    private String CorreoElectronico;
+    private String dni;
+    private String nombreCompleto;
+    private String correoElectronico;
 
     public String getDNI() {
-        return DNI;
+        return dni;
     }
 
-    public String getNombreCompleto() {
-        return NombreCompleto;
+    public String getnombreCompleto() {
+        return nombreCompleto;
     }
 
-    public void setNombreCompleto(String nombreCompleto) {
-        this.NombreCompleto = nombreCompleto;
+    public void setnombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
     }
 
-    public String getCorreoElectronico() {
-        return CorreoElectronico;
+    public String getcorreoElectronico() {
+        return correoElectronico;
     }
 
-    public void setCorreoElectronico(String correoElectronico) {
-        this.CorreoElectronico = correoElectronico;
+    public void setcorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
     }
 
 
     public Cliente(String DNI, String NombreCompleto, String CorreoElectronico) {
-        this.DNI = DNI;
-        this.NombreCompleto = NombreCompleto;
-        this.CorreoElectronico = CorreoElectronico;
+        this.dni = dni;
+        this.nombreCompleto = nombreCompleto;
+        this.correoElectronico = correoElectronico;
     }
 
 
     public Cliente(Cliente Clientecopia) {
-        this(Clientecopia.DNI, Clientecopia.NombreCompleto, Clientecopia.CorreoElectronico);
+        this(Clientecopia.dni, Clientecopia.nombreCompleto, Clientecopia.correoElectronico);
     }
 
 
     void imprimirCliente() {
         System.out.println("DATOS DEL CLIENTE");
-        System.out.println("DNI: " + DNI);
-        System.out.println("NombreCompleto: " + NombreCompleto);
-        System.out.println("CorreoElectronico: " + CorreoElectronico);
+        System.out.println("DNI: " + dni);
+        System.out.println("NombreCompleto: " + nombreCompleto);
+        System.out.println("CorreoElectronico: " + correoElectronico);
     }
 
 
